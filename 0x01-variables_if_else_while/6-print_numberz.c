@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int b;
+	int c;
 
-	for (b = 0; b < 10; b++)
+	for (c = 0; c <= 9; c++)
 	{
-		printf("%d", b);
+		putchar(c);
 	}
-	printf("\n");
+	putchar('\n');
 
 	return (0);
 }
