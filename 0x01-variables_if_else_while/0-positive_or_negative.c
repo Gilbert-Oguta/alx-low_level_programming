@@ -30,8 +30,5 @@ int main(void)
 	{
 		printf("%d error\n", n);
 	}
-
-	/*your code goes there */
 	return (0);
-
 }
