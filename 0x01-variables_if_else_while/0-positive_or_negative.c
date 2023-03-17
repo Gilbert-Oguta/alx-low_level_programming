@@ -30,5 +30,6 @@ int main(void)
 	{
 		printf("%d error\n", n);
 	}
+
 	return (0);
 }
