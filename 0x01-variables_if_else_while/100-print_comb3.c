@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int a;
+
+	for (a = 0; a <= 90; a++)
+	{
+		for ()
+		{
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
+		}
+		if (a != 89)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+
+	return (0);
+}
