@@ -8,20 +8,28 @@
  */
 int main(void)
 {
-	int a;
+	int a, b, c;
 
-	for (a = 0; a <= 90; a++)
+	a = 0;
+
+	while (a < 100)
 	{
-		for (a = 0; a < 90; a++)
+		b = a % 10; /* singles digit */
+		c = a / 10; /* doubles digit */
+
+		if (c < b)
 		{
-			putchar((a / 10) + '0');
-			putchar((a % 10) + '0');
+			putchar(c + '0');
+			putchar(b + '0');
+
+			if (a < 89)
+			{
+				putchar(44);
+				putchar(32);
+			}
 		}
-		if (a != 89)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+
+		a++;
 	}
 	putchar('\n');
 
