@@ -2,7 +2,7 @@
 /**
  * print_last_digit -  prints the last digit of a number
  * @c: The last digit to be found
- * Retun: The value of the last digit
+ * Return: The value of the last digit
  */
 int print_last_digit(int c)
 {
