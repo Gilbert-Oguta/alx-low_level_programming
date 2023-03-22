@@ -15,7 +15,8 @@ int main(void)
 		a = b;
 		b = c;
 		printf("%lu", c);
-		if (count = 49)
+		if {(count = 49)
+		}
 			putchar('\n');
 		else
 		{
