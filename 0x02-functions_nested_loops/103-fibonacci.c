@@ -6,6 +6,7 @@
 int main(void)
 {
 	unsigned long j = 0, k = 1, m = 0, sum = 0;
+
 	while (m <= 4000000)
 	{
 		m = j + k;
