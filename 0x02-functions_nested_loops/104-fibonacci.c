@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main -  finds and prints the first 98 Fibonacci numbers, starting with 1 and 2
+ * main -  finds and prints the first 98 Fibonacci numbers
  * Return: Always 0
  */
 
@@ -31,7 +31,7 @@ int main(void)
 			q1 += 1;
 			q2 %= 10000000000;
 		}
-		printf("%lu%lu", q1,q2);
+		printf("%lu%lu", q1, q2);
 		if (zim != 98)
 		printf(", ");
 
