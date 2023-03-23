@@ -12,7 +12,7 @@ int main(void)
 
 	for (a = 1; a <= square; a++)
 	{
-		if (number % a ==0)
+		if (number % a == 0)
 		{
 			inc = number / a;
 		}
