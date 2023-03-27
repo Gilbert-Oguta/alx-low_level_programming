@@ -6,24 +6,41 @@
  */
 void rev_string(char *s)
 {
-	int a, b, c;
-	char *x, num;
+	int i = 0, length;
+length = _strlen(s) - 1;
+while (length > i)
+{
+swap_char(s + length, s + i);
+i++;
+length--;
+}
+}
 
-	x = s;
+/**
+ *_strlen - returns the length of a string
+ * @s: string
+ *Return: returns lenght;
+ */
+int _strlen(char *s)
+{
+int count, inc;
+inc = 0;
+for (count = 0; s[count] != '\0'; count++)
+inc++;
 
-	while (s[b] != '\0')
-	{
-		b++;
-	}
-	for (c = 1; c < b; c++)
-	{
-		x++;
-	}
-	for (a = 0; a < (b / 2); a++)
-	{
-		num = s[a];
-		s[a] = *x;
-		*x = num;
-		x--;
-	}
+return (inc);
+}
+
+/**
+*swap_char - swap two characters
+*@a: first character
+*@b: second character
+*Return: nothing
+*/
+
+void swap_char(char *a, char *b)
+{
+char tmp = *a;
+*a = *b;
+*b = tmp;
 }
