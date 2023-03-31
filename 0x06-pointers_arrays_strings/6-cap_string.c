@@ -16,7 +16,7 @@ char *cap_string(char *str)
 			str[len] -= 32;
 
 		for (index = 0; index < 13; index++)
-			if (str[len] == sep[j])
+			if (str[len] == sep[index])
 				if (str[len + 1] >= 97 && str[len + 1] <= 122)
 					str[len + 1] -= 32;
 	}
