@@ -4,6 +4,7 @@
  * @s: pointed memory
  * @b: constant byte
  * @n: number of bytes
+ * Return: returns new value of pointed memory
  */
 char *_memset(char *s, char b, unsigned int n)
 {
