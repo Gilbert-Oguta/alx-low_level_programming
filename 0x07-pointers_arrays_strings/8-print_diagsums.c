@@ -5,6 +5,7 @@
  * of a square matrix of integers
  * @a: summed matrix
  * @size: size of matrix
+ * Return: void
  */
 void print_diagsums(int *a, int size)
 {
