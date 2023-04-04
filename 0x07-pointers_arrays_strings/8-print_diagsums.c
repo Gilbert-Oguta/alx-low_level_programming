@@ -10,21 +10,13 @@
 void print_diagsums(int *a, int size)
 {
 	int i = 0, num1 = 0, num2 = 0;
-	int *temp = a;
 
 	while (i < size)
 	{
-		num1 += *temp;
-		temp += size + 1;
-	}
-	temp = a + size - 1;
-	i = 0;
+		num1 = num1 + *(a + i * size + i);
+		num2 = num2 + *(a + i * size + size - i - 1);
 
-	while (i < size)
-	{
-		num2 += *temp;
-		temp += size - 1;
 		i++;
 	}
-	printf("%d, %d\n", num1, num2);
+	printf("%i, %i\n", num1, num2);
 }
