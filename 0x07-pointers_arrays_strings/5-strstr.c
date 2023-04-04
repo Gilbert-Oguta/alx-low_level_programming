@@ -2,7 +2,7 @@
 /**
  * _strstr - function that locates a substring
  * @haystack:m main string to be looked for
- * @needle searched in haystack
+ * @needle: searched in haystack
  * Return: returns a pointer beginning of a substring
  */
 char *_strstr(char *haystack, char *needle)
@@ -12,14 +12,20 @@ char *_strstr(char *haystack, char *needle)
 	if (*needle == 0)
 		return (haystack);
 
-	while (haystack)
+	while (*haystack)
 	{
-		for (y = 0; haystack[y] == needle[y]; y++)
+		y = 0;
+
+		if (haystack[y] == needle[y])
 		{
-			if (needle[y + 1] == '\0')
-				return (haystack);
+			do {
+				if (needle[y + 1] == '\0')
+					return (haystack);
+
+				y++;
+			} while (haystack[y] == needle[y];
 		}
 		haystack++;
 	}
-	return ('\0');
+	return ('\0')
 }
