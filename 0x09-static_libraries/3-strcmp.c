@@ -10,40 +10,40 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-        int a = 0, b = 0, c = 0, x = 0, comp;
+	int a = 0, b = 0, c = 0, x = 0, comp;
 
-        while (s1[a])
-        {
-                a++;
-        }
-        while (s2[b])
-        {
-                b++;
-        }
+	while (s1[a])
+	{
+		a++;
+	}
+	while (s2[b])
+	{
+		b++;
+	}
 
-        if (a <= b)
-        {
-                comp = a;
-        }
-        else
-        {
-                comp = b;
-        }
+	if (a <= b)
+	{
+		comp = a;
+	}
+	else
+	{
+		comp = b;
+	}
 	while (c <= comp)
-        {
-                if (s1[c] == s2[c])
-                {
-                        c++;
-                        continue;
-                }
-                else
-                {
-                        x = s1[c] - s2[c];
-                        break;
-                }
+	{
+		if (s1[c] == s2[c])
+		{
+			c++;
+			continue;
+		}
+		else
+		{
+			x = s1[c] - s2[c];
+			break;
+		}
 
-                c++;
-        }
-        return (x);
+		c++;
+	}
+	return (x);
 }
 
