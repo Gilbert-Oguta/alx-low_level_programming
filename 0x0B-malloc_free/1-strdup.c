@@ -13,28 +13,19 @@ char *_strdup(char *str)
 	int num, index;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
 
-	for (num = 0; str[num]; num++)
-	{
-		index++;
-	}
+	num = 0;
+	while (str[num] != '\0')
+		num++;
 
-	strcpy = malloc(sizeof(char) * (index + 1));
+	strcpy = malloc(sizeof(char) * (num + 1));
 
 	if (strcpy == NULL)
-	{
 		return (NULL);
-	}
 
-	for (num = 0; str[index]; index++)
-	{
-		strcpy[num] = str[num];
-	}
-
-	strcpy[index] = '\0';
+	for (index = 0; str[index]; index++)
+		strcpy[index] = str[index];
 
 	return (strcpy);
 }
